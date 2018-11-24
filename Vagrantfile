@@ -18,6 +18,7 @@ Vagrant.configure("2") do |config|
       config.vm.provision "shell", inline: "apt-get update -qq"
       config.vm.provision "shell", inline: "apt-get install -y -qq dos2unix"
       config.vm.provision "shell", inline: "dos2unix /vagrant/scripts/*.sh"
+      config.vm.provision "shell", inline: "dos2unix /vagrant/scripts/*/*.sh"
       
       config.vm.provision :shell, path: "scripts/bootstrap_base.sh"
   end

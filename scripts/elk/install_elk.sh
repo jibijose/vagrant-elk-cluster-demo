@@ -7,6 +7,6 @@ echo 'deb https://artifacts.elastic.co/packages/5.x/apt stable main' | \
 apt-get update -qq
 
 
-/vagrant/scripts/install_elasticsearch.sh
-/vagrant/scripts/install_logstash.sh
-/vagrant/scripts/install_kibana.sh
+/vagrant/scripts/elk/install_elasticsearch.sh
+/vagrant/scripts/elk/install_logstash.sh
+/vagrant/scripts/elk/install_kibana.sh

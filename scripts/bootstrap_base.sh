@@ -18,9 +18,9 @@ apt-get upgrade -y -qqq
 echo "************************************ JDK8 Installation *****************************************"
 /vagrant/scripts/install_jdk8.sh
 echo "************************************ ELK Installation *****************************************"
-/vagrant/scripts/install_elk.sh
+/vagrant/scripts/elk/install_elk.sh
 echo "************************************ Beats Installation *****************************************"
-/vagrant/scripts/install_beats.sh
+/vagrant/scripts/beats/install_beats.sh
 
 echo "************************************ Cleanup Installation *****************************************"
 # clear out unneeded packages
@@ -34,4 +34,4 @@ echo "************************************ XPack Installation ******************
 /vagrant/scripts/install_xpack.sh
 
 echo "************************************ Health checks *****************************************"
-/vagrant/scripts/check_status.sh
+/vagrant/scripts/util/check_status.sh

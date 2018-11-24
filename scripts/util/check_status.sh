@@ -20,3 +20,5 @@ checkStatus "Kibana" "http://localhost:5601/status" GET 200
 
 checkStatus "Filebeat" "http://localhost:9200/filebeat-*/_search?pretty" GET 200
 
+checkStatus "Filebeat" "http://localhost:9200/_cat/indices?v" GET 200
+
